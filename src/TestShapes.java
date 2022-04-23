@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 /**
- *
  * FIRST, COMPLETE Shape interface
  * THEN, COMPLETE Rectangle, Square, and Circle classes
  * LASTLY, COMPLETE TestShapes class
@@ -19,6 +18,7 @@ public class TestShapes {
          -height of the rectangle = 6
          -side of the square = 2.5
          -radius of the circle = 4
+
 
 
          Then print each object
@@ -40,6 +40,33 @@ public class TestShapes {
 
          Circle has the largest area as 50.24
          */
+
+        Rectangle rectangle = new Rectangle();
+        rectangle.width = 5.5;
+        rectangle.height = 6;
+
+        Square square = new Square();
+        square.side = 2.5;
+
+        Circle circle = new Circle();
+        circle.radius = 4;
+
+        ArrayList<Shape> shapes = new ArrayList<>();
+        shapes.add(circle);
+        shapes.add(rectangle);
+        shapes.add(square);
+
+        double max = Double.MIN_VALUE;
+        Shape maxAreaShape = null;
+
+        for (Shape shape : shapes) {
+            System.out.println(shape);
+            if (shape.area() > max) {
+                maxAreaShape = shape;
+                max = shape.area();
+            }
+        }
+        System.out.println(maxAreaShape.getClass().getSimpleName() + " has the largest area as " + max);
 
 
     }
