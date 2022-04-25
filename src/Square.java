@@ -14,17 +14,18 @@ public class Square implements Shape{
     Instance variable must be encapsulated
     double side
      */
-    double side;
+    private double side;
 
-
-
+    public void setSide(double side) {
+        this.side = side;
+    }
 
     /*
-    Override area and perimeter methods here
-    REMEMBER:
-    Area of a square can be found as => side * side
-    Perimeter of a square can be found as => 4 * side
-    */
+        Override area and perimeter methods here
+        REMEMBER:
+        Area of a square can be found as => side * side
+        Perimeter of a square can be found as => 4 * side
+        */
     @Override
     public double area() {
         return side * side;

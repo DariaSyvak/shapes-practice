@@ -24,8 +24,11 @@ public class Circle implements Shape{
     Instance variable must be encapsulated
     double radius
      */
-    double radius;
+    private double radius;
 
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
 //    public double getRadius() {
 //        return radius;
 //    }

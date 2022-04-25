@@ -42,14 +42,14 @@ public class TestShapes {
          */
 
         Rectangle rectangle = new Rectangle();
-        rectangle.width = 5.5;
-        rectangle.height = 6;
+        rectangle.setWidth(5.5);
+        rectangle.setHeight(6);
 
         Square square = new Square();
-        square.side = 2.5;
+        square.setSide(2.5);
 
         Circle circle = new Circle();
-        circle.radius = 4;
+        circle.setRadius(4);
 
         ArrayList<Shape> shapes = new ArrayList<>();
         shapes.add(circle);
